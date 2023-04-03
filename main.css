@@ -6,7 +6,7 @@
 
 :root {
    --index: calc(1vw + 1vh);
-   --gutter: 30px;
+   --middle-gap: 30px;
    --side-small: 26;
    --side-big: 36;
    --depth: 4000px;
@@ -55,6 +55,32 @@ body {
    align-items: center;
    justify-content: center;
    transition: var(--transition), opacity .75s ease;
-   will-change: transform;
-   transform-style: preserve-3d;  /* no blur */
+   will-change: transform;  /* more browser resources, for smoothness */
+   transform-style: preserve-3d;
+}
+
+h1, h2, h3, h4 {
+   font-weight: 100;
+   text-transform: uppercase;
+}
+
+.frame h2 {
+   text-align: center;
+   font-size: calc(var(--index) * 3.3);
+}
+
+.frame-media {
+   position: relative;
+   width: calc(var(--index) * var(--side-small));
+   height: calc(var(--index) * var(--side-big));
+   background-position: center;
+   background-size: cover;
+}
+
+.media-left {
+   right: calc(var(--side-small) / 2 * var(--index) + var(--middle-gap));
+}
+
+.media-right {
+   left: calc(var(--side-small) / 2 * var(--index) + var(--middle-gap));
 }
