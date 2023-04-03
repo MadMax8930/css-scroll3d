@@ -14,12 +14,14 @@ window.onscroll = function() {
 
    frames.forEach(function(n, i) {
       zValues.push((i * zSpacing) + zSpacing)
-      zValues[i] += delta * -5
+      zValues[i] += delta * -5.5
 
       let frame = frames[i]
       let transform = `translateZ(${zValues[i]}px)`
-      frame.setAttribute('style', `transform: ${transform}`)
+      let opacity = zValues[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0
+      frame.setAttribute('style', `transform: ${transform};
+                                   opacity: ${opacity}`)
    })
 }
 
-window.scrollTo(0,1)
+window.scrollTo(0, 1)
