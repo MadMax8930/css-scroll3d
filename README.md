@@ -3,4 +3,4 @@ Made with [HTML/CSS/JS] on the theme of [Nature]
 
 UI visible here:
 
-[https://www.nature-scroll-3d.netlify.app]
+[https://nature-scroll-3d.netlify.app]
