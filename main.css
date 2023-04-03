@@ -129,7 +129,7 @@ video.media-left {
    right: 5vw;
    cursor: pointer;
    width: 24px;
-   transform: 0.25s ease;
+   transition: 0.25s ease;
 }
 
 .soundbutton.paused {

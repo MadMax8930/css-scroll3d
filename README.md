@@ -1,6 +1,6 @@
-Nature theme 3D Scroll with images and video fragments
-Made with HTML/CSS/JS
+3D Scroll with images, video fragments and audio toggle
+Made with [HTML/CSS/JS] on the theme of [Nature]
 
 UI visible here:
 
-[https://www.css-scroll-3d.netlify.app]
+[https://www.nature-scroll-3d.netlify.app]
