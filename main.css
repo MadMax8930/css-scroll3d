@@ -62,13 +62,13 @@ body {
 h1, h2, h3, h4 {
    font-weight: 100;
    text-transform: uppercase;
+   width: min-content;
+   line-height: 1;
 }
 
 .frame h2 {
    text-align: center;
    font-size: calc(var(--index) * 3.3);
-   width: min-content;
-   line-height: 1;
 }
 
 .frame-media {
@@ -102,4 +102,23 @@ video.media-right {
 
 video.media-left {
    right: calc(var(--side-big) / 2 * var(--index) + var(--middle-gap));
+}
+
+.text-right > * {
+   position: relative;
+   left: 18vw;
+}
+
+.text-left > * {
+   position: relative;
+   right: 18vw;
+}
+
+.frame h3 {
+   font-size: calc(var(--index) * 3);
+}
+
+.frame p {
+   max-width: 32vw;
+   margin-top: 5vh;
 }
